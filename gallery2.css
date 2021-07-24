@@ -1,0 +1,30 @@
+
+.grid img {
+width: 70%;
+height: 100%;
+object-fit: cover;
+}
+.centered {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.ex{
+font-family: cursive;
+font-size: 400%;
+color:#ffffff;
+}
+
+.zoom {
+padding-top: 50px;
+padding-bottom: 50px;
+transition: transform .2s; /* Animation */
+width: 100px;
+height: 100px;
+margin: 0 auto;
+}
+
+.zoom:hover {
+transform: scale(1.1);
+}

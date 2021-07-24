@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/fotter.css">
+    <link rel="stylesheet" href="/navbar1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: darkgray;
+        }
+         #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        .con{
+            text-align: center;
+            font-size: 40px;
+            font-style:'Pacifico', cursive;
+
+        }
+
+        #contact-box input,
+        #contact-box textarea,
+        #contact-box select,
+        #contact-box submit {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px ;
+            border-color: solid black;
+            font-size: 1.1rem;
+            background-color: rgb(114, 110, 110);
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+           
+        }
+        #contact-box ::placeholder{
+            color: rgb(182, 178, 180);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-wrap">
+            <img src="/logo2.jpg" class="logo-img" alt="Logo">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+              <i class="fa fa-bars menu-icon"></i>
+           </label>
+            <nav>
+                <ul>
+                    <li><a href="/Evenzone.html">Home</a></li>
+                    <li><a href="/gallery.html" >Gallery</a></li>
+                    <li><a href="/services.html" ></a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="/services.html" target="_blank">Services Details</a>
+                        <a href="/wedding.html" target="_blank">Wedding Events</a>
+                        <a href="/corporate.html" target="_blank">Corporate Events</a>
+                        <a href="/celebrity.html" target="_blank">Celebrity Management Events</a>
+                      </div>
+                    </div>
+                    </li>
+                    <li><a href="/contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-bars menu-icon"></i>
+        </div>
+        </header>
+        <br>
+    <section id="contact">
+        <h1 class="con" style="font-family: 'Pacifico', cursive;">CONTACT US</h1>
+        <h2 class="con" style="font-family: 'Pacifico', cursive;;">Send Us A Message....</h2>
+        <h1 class="h-primary center"></h1>
+        <div id="contact-box">
+            <form action="contact.php">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="date">Event Date: </label>
+                    <input type="date">
+                </div> 
+                <br>
+                <div class="form-group">
+                    <label for="details">Venue: </label>
+                    <input type="text" placeholder= "enter venue address">
+                </div> 
+                <br>
+                <div class="form-group">
+                    <label for="message">Event Details: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write about event details"></textarea>  
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="events"> Type Of Events</label>
+                   <select name="events" id="events">
+                        <option value="">--Please choose an option--</option>
+                        <option value="wed">Wedding</option>
+                        <option value="bus">Business Meet-up</option>
+                        <option value="celeb">Celebrity Management</option>
+                    </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="hear"> How did you hear about us?</label>  
+                       <select name="events" id="hear">
+                            <option value="">--Please select--</option>
+                            <option value="wed">Instagram</option>
+                            <option value="bus">Facebook</option>
+                            <option value="celeb">Google</option>
+                            <option value="bust">Refferal</option>
+                            <option value="celebt">Others</option>
+                        </select>
+                        </div>
+                        <br>
+        <span id="form-group">
+            <input type="submit" value="SUBMIT NOW">
+        </span>
+    </div>
+        </form>
+    </section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+      
+          <h3>EVENZONE<span> &nbsp;&nbsp;<img src="/logo1.jpg" alt="logo" height="50px"></span></h3>
+      
+          <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Services</a>
+            ·
+            <a href="#">gallery</a>
+            ·
+            <a href="#">Contact</a>
+          </p>
+        
+        <div class="footer-icons">
+      
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        </div>
+      
+      
+        <div class="footer-right">
+      
+          <p>Leave Your Comment</p>
+      
+          <form action="#">
+      
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button>Send</button>
+      
+          </form>
+      
+        </div>
+      
+      </footer>
+</body>
+</html>
